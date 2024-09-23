@@ -1,0 +1,25 @@
+print ('Welcome to Python Pizza Deliveries')
+
+
+size= input ('What is the size of the pizza ? small, medium, large')
+
+price = 0
+
+if size == 'small':
+    price=15
+elif size == 'medium':
+    price=20
+elif size == 'large':
+    price=25
+
+add_pepperoni= input ('do you want a pepperoni in your pizza?')
+if add_pepperoni == 'YES':
+    if size == 'small':
+        price+=2
+    else:
+        price+=3
+
+extra_cheese= input ('do you want extra_cheese in your pizza?' )
+if extra_cheese == 'YES':
+    price+=1
+    print (price)
